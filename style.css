@@ -54,7 +54,6 @@
 
 .logo {
 	padding: 0;
-	margin-right: 45px;
 }
 
 .logo__text {
@@ -72,10 +71,10 @@
 }
 
 .nav__link {
-	margin-right: 45px;
+	margin: 0 15px;
 }
 .nav__link:last-child {
-	margin-right: 0;
+	margin: 0;
 }
 
 .link {
@@ -106,11 +105,24 @@
 .auth__link {
 	margin-right: 30px;
 }
-
 .auth__link:last-child {
 	margin-right: 0;
 }
+/*    burgerr */
+.menu__box {
+	display: inherit;
+	align-items: center;
+}
 
+#menu__toggle {
+	opacity: 0;
+}
+
+.menu__logo {
+	display: none;
+}
+
+/*burger end*/
 .main {
 	background-color: var(--main-bg-white);
 }
@@ -164,7 +176,6 @@
 	font-size: 36px;
 	font-weight: 700;
 	text-align: center;
-	margin-bottom: 32px;
 }
 
 .most-popular-cookbooks {
@@ -172,10 +183,8 @@
 	justify-content: space-between;
 }
 
-.most-popular-cookbooks.card__image {
-	width: 215px;
-	height: 215px;
-	border-radius: 8px;
+.most-popular-cookbooks__card {
+	margin-top: 32px;
 }
 
 .card {
@@ -183,6 +192,7 @@
 	border-radius: 10px;
 	box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.06);
 	padding: 20px 20px 10px 20px;
+	flex-wrap: wrap;
 }
 
 .card__shows {
@@ -199,6 +209,7 @@
 
 .card__image {
 	width: 100%;
+	border-radius: 8px;
 }
 
 .card__title {
@@ -244,7 +255,9 @@
 .picked-by-us {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 110px;
+	padding-bottom: 110px;
+	padding-top: 32px;
+	flex-wrap: wrap;
 }
 .picked-by-us__section {
 	display: flex;
@@ -255,6 +268,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 }
+
 .picked-by-us__big {
 	position: relative;
 	width: 540px;
@@ -294,6 +308,9 @@
 .trending-recepies {
 	display: flex;
 	justify-content: space-between;
+}
+.trending-recepies__card {
+	margin: 30px 0;
 }
 
 .footer {
@@ -339,4 +356,170 @@
 	color: var(--less-white);
 	font-size: 16px;
 	font-weight: normal;
+}
+
+@media screen and (max-width: 1120px) {
+	.container {
+		max-width: none;
+	}
+	.nav {
+		padding: 15px 30px;
+	}
+	.elementary__content {
+		margin-left: 30px;
+	}
+	.most-popular-cookbooks {
+		padding-top: 15px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.most-popular-cookbooks__card {
+		flex: 0 0 40%;
+		margin: 15px;
+	}
+	.card__image {
+		flex: 1 0 100%;
+	}
+	.card__image img {
+		width: 100%;
+	}
+	.picked-by-us {
+		justify-content: space-evenly;
+	}
+	.picked-by-us__section {
+		margin-top: 32px;
+	}
+	.picked-by-us__left {
+		margin: 0 30px 30px 30px;
+	}
+	.trending-recepies {
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		padding-top: 15px;
+	}
+	.trending-recepies__card {
+		flex: 0 0 50%;
+		margin: 15px;
+	}
+	.footer-nav {
+		padding: 0 30px;
+	}
+}
+@media screen and (max-width: 900px) {
+	.footer-nav {
+		flex-direction: column;
+	}
+	.footer-nav div {
+		margin-bottom: 15px;
+	}
+}
+@media screen and (max-width: 750px) {
+	.nav__search {
+		margin: 15px auto;
+		max-width: 150px;
+		color: var(--gray);
+	}
+	.search__input {
+		background-color: var(--less-white);
+		border: 1.5px solid var(--primary);
+	}
+	.nav__links {
+		display: flex;
+		flex-direction: column;
+	}
+	.nav__link {
+		margin-bottom: 15px;
+	}
+
+	.menu__box {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav__auth {
+		order: 1;
+	}
+	.nav__links {
+		order: 3;
+	}
+	.nav__search {
+		order: 2;
+	}
+
+	.menu__btn {
+		display: flex;
+		align-items: center;
+		position: relative;
+		width: 26px;
+		height: 26px;
+		cursor: pointer;
+		z-index: 1;
+	}
+
+	.menu__btn > span,
+	.menu__btn > span::before,
+	.menu__btn > span::after {
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: #616161;
+	}
+	.menu__btn > span::before {
+		content: "";
+		top: -8px;
+	}
+	.menu__btn > span::after {
+		content: "";
+		top: 8px;
+	}
+	.menu__box {
+		display: block;
+		position: fixed;
+		visibility: hidden;
+		top: 0;
+		left: -100%;
+		width: 300px;
+		height: 100%;
+		margin: 0;
+		padding: 20px 0;
+		list-style: none;
+		text-align: center;
+
+		background-color: #eceff1;
+		box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+	}
+
+	.menu__item {
+		display: block;
+		padding: 12px 24px;
+		color: #333;
+		font-family: "Roboto", sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		text-decoration: none;
+	}
+	.menu__item:hover {
+		background-color: #cfd8dc;
+	}
+	#menu__toggle:checked ~ .menu__btn > span {
+		transform: rotate(45deg);
+	}
+	#menu__toggle:checked ~ .menu__btn > span::before {
+		top: 0;
+		transform: rotate(0);
+	}
+	#menu__toggle:checked ~ .menu__btn > span::after {
+		top: 0;
+		transform: rotate(90deg);
+	}
+	#menu__toggle:checked ~ .menu__box {
+		visibility: visible;
+		left: 0;
+	}
+
+	.menu__logo {
+		display: block;
+		margin-bottom: 30px;
+	}
 }
