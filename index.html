@@ -9,224 +9,269 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
-		href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;700&family=Nunito:wght@400;800;900&display=swap"
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;800;900&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<header class="header">
-		<div class="container">
-			<nav class="nav">
-				<div class="logo">
-					<span class="logo__text">Feed<span class="logo__text--primary">me</span></span>
-				</div>
-				<input id="menu__toggle" type="checkbox" />
-				<label class="menu__btn" for="menu__toggle">
-					<span></span>
-				</label>
-				<div class="menu__box">
-					<div class="logo menu__logo">
-						<span class="logo__text">Feed<span class="logo__text--primary">me</span></span>
-					</div>
-					<div class="nav__links">
-						<a href="#" class="nav__link link">Cookbooks</a>
-						<a href="#" class="nav__link link">Recepies</a>
-					</div>
-					<div class="nav__search">
-						<input type="search" name="nav-search" id="site-search" class="search__input">
-					</div>
-					<div class="nav__auth">
-						<a href="#" class="auth__link link">Sign In</a>
-						<a href="#" class="auth__link link">Sign Up</a>
-					</div>
-				</div>
-			</nav>
-		</div>
+	<header class="page page_white header">
+		<nav class="nav row row_align-center  container">
+			<div class="logo">
+				<span class="logo__text">Feed<span class="logo__text logo__text_primary">me</span>
+				</span>
+			</div>
+			<div class="nav__links-block burger__elem">
+				<a href="" class="nav-header__link nav-header__link_link-margin link">Cookbooks</a>
+				<a href="" class="nav-header__link nav-header__link_link-margin link">Recepies</a>
+			</div>
+			<form action="#" class="search-form_block burger__elem">
+				<input type="text" class="search-form__input">
+			</form>
+			<div class="nav__auth-block burger__elem">
+				<a href="" class="nav-header__link nav-header__link_auth-margin link">Sign In</a>
+				<a href="" class="nav-header__link nav-header__link_auth-margin link">Sign Up</a>
+			</div>
+			<btn class="burger-btn">
+				<div class="burger-btn__line"></div>
+				<div class="burger-btn__line"></div>
+				<div class="burger-btn__line"></div>
+			</btn>
+		</nav>
 	</header>
 	<main class="main">
-		<div class="elementary">
-			<div class="elementary__wrapper ">
-				<div class="elementary__content container">
-					<h1 class="elementary__tagline">Find And Create Your Favourite Cookbooks And Recipies</h1>
-					<button class="elementary__btn">Create Account</button>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="section">
-				<h3 class="section__heading">Most Popular Cookbooks</h3>
-				<div class="most-popular-cookbooks">
-					<div class="card most-popular-cookbooks__card">
-						<div class="card__shows">
-							<svg class="icon__show"></svg>
-							<span class="card__counter">12000 views</span>
-						</div>
-						<div class="card__image">
-							<img src="./images/card1.png" alt="Food photo">
-						</div>
-						<div class="card__title">Fresh meat</div>
-						<div class="card__creator">John Doe</div>
-						<div class="card__rating">
-							<div class="card__likes">
-								<svg class="icon__heart"></svg>
-								<span class="card__counter">499 likes</span>
-							</div>
-							<div class="card__comments">
-								<svg class="icon__comment"></svg>
-								<span class="card__counter">12 comments</span>
+		<div class="page page_black">
+			<div class="initial-block">
+				<div class="row row_align-center row_parent-height initial__img">
+					<div class="container">
+						<div class="initial__tagline-block">
+							<div class="initial__tagline-text initial__tagline-text_shadow-772px">
+								Find And Create Your Favourite Cookbooks And Recipies
 							</div>
 						</div>
-					</div>
-					<div class="card most-popular-cookbooks__card">
-						<div class="card__shows">
-							<svg class="icon__show"></svg>
-							<span class="card__counter">12000 views</span>
-						</div>
-						<div class="card__image">
-							<img src="./images/card2.png" alt="Food photo">
-						</div>
-						<div class="card__title">Fresh meat</div>
-						<div class="card__creator">John Doe</div>
-						<div class="card__rating">
-							<div class="card__likes">
-								<svg class="icon__heart"></svg>
-								<span class="card__counter">499 likes</span>
-							</div>
-							<div class="card__comments">
-								<svg class="icon__comment"></svg>
-								<span class="card__counter">12 comments</span>
-							</div>
-						</div>
-					</div>
-					<div class="card most-popular-cookbooks__card">
-						<div class="card__shows">
-							<svg class="icon__show"></svg>
-							<span class="card__counter">12000 views</span>
-						</div>
-						<div class="card__image">
-							<img src="./images/card3.png" alt="Food photo">
-						</div>
-						<div class="card__title">Fresh meat</div>
-						<div class="card__creator">John Doe</div>
-						<div class="card__rating">
-							<div class="card__likes">
-								<svg class="icon__heart"></svg>
-								<span class="card__counter">499 likes</span>
-							</div>
-							<div class="card__comments">
-								<svg class="icon__comment"></svg>
-								<span class="card__counter">12 comments</span>
-							</div>
-						</div>
-					</div>
-					<div class="card most-popular-cookbooks__card">
-						<div class="card__shows">
-							<svg class="icon__show"></svg>
-							<span class="card__counter">12000 views</span>
-						</div>
-						<div class="card__image">
-							<img src="./images/card4.png" alt="Food photo">
-						</div>
-						<div class="card__title">Fresh meat</div>
-						<div class="card__creator">John Doe</div>
-						<div class="card__rating">
-							<div class="card__likes">
-								<svg class="icon__heart"></svg>
-								<span class="card__counter">499 likes</span>
-							</div>
-							<div class="card__comments">
-								<svg class="icon__comment"></svg>
-								<span class="card__counter">12 comments</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section">
-				<h3 class="section__heading">Picked By Us</h3>
-				<div class="picked-by-us">
-					<div class="picked-by-us__left">
-						<div class="picked-by-us__big pancakes">
-							<button class="picked-by-us__btn pucked-by-us__btn--big">Its all about pancakes</button>
-						</div>
-					</div>
-					<div class="picked-by-us__right">
-						<div class="picked-by-us__wide ice-creame">
-							<button class="picked-by-us__btn pucked-by-us__btn--small ">Ice cream dream</button>
-						</div>
-						<div class="picked-by-us__section">
-							<div class="picked-by-us__small breakfast">
-								<button class="picked-by-us__btn pucked-by-us__btn--small">Ice cream dream</button>
-							</div>
-							<div class="picked-by-us__small fruits-and-vegetables">
-								<button class="picked-by-us__btn pucked-by-us__btn--small">Ice cream dream</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</main>
-		<div class="section-primary">
-			<div class="container">
-				<h3 class="section__heading"> Trending Recepies</h3>
-				<div class="trending-recepies">
-					<div class="card trending-recepies__card">
-						<div class="card__shows">
-							<svg class="icon__show"></svg>
-							<span class="card__counter">12000 views</span>
-						</div>
-						<div class="card__image">
-							<img src="./images/trendingRecepies1.png" alt="Food photo">
-						</div>
-						<div class="card__title">Fresh meat with potato</div>
-						<div class="card__creator">John Doe</div>
-					</div>
-					<div class="card trending-recepies__card">
-						<div class="card__shows">
-							<svg class="icon__show"></svg>
-							<span class="card__counter">12000 views</span>
-						</div>
-						<div class="card__image">
-							<img src="./images/trendingRecepies2.png" alt="Food photo">
-						</div>
-						<div class="card__title">Fresh meat with potato</div>
-						<div class="card__creator">John Doe</div>
-					</div>
-					<div class="card trending-recepies__card">
-						<div class="card__shows">
-							<svg class="icon__show"></svg>
-							<span class="card__counter">12000 views</span>
-						</div>
-						<div class="card__image">
-							<img src="./images/trendingRecepies3.png" alt="Food photo">
-						</div>
-						<div class="card__title">Fresh meat with potato</div>
-						<div class="card__creator">John Doe</div>
+						<button class="btn btn_primary btn_text-20 initial__btn initial__btn-block">
+							Create Account
+						</button>
 					</div>
 				</div>
 			</div>
 		</div>
-		<footer class="footer">
+		<div class="page">
 			<div class="container">
-				<nav class="footer-nav">
+				<div class="section section_big-top-padding">
+					<div class="most-popular-cookbooks">
+						<div  class="title-block">
+							<div class="title">Most Popular Cookbooks</div>
+						</div>
+						<div class="row row_wrap-1150px">
+							<div class="columns-2-1150px columns-1-772px">
+								<div class="card card_shadow card_left">
+									<div class="card__view-block">
+										<svg class="icon__show icon__show_popular-1150px icon__show_992px"></svg>
+										<span class="card__counter card__counter_popular-1150px card__counter_992px">12000 views</span>
+									</div>
+									<div class="card__image-block ">
+										<img src="./images/card1.png" alt="" class="card__image image_res-215x215">
+									</div>
+									<div class="card__title card__title_popular-1150px card__title_992px">Fresh meat</div>
+									<div class="card__creator card__creator_popular-1150px card__creator_992px">John Doe</div>
+									<div class="card__rating-block row">
+										<div class="card__likes row row_align-center">
+											<svg class="icon__heart icon__heart_popular-1150px icon__heart_992px"></svg>
+											<span class="card__counter card__counter_popular-1150px card__counter_992px">499 likes</span>
+										</div>
+										<div class="card__comments row row_align-center">
+											<svg class="icon__comment icon__comment_popular-1150px icon__comment_992px"></svg>
+											<span class="card__counter card__counter_popular-1150px card__counter_992px">12 comments</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns-2-1150px columns-1-772px">
+								<div class="card card_shadow card_left">
+									<div class="card__view-block">
+										<svg class="icon__show icon__show_popular-1150px icon__show_992px"></svg>
+										<span class="card__counter card__counter_popular-1150px card__counter_992px">12000 views</span>
+									</div>
+									<div class="card__image-block ">
+										<img src="./images/card2.png" alt="" class="card__image image_res-215x215">
+									</div>
+									<div class="card__title card__title_popular-1150px card__title_992px">Fresh meat</div>
+									<div class="card__creator card__creator_popular-1150px card__creator_992px">John Doe</div>
+									<div class="card__rating-block row">
+										<div class="card__likes row row_align-center">
+											<svg class="icon__heart icon__heart_popular-1150px icon__heart_992px"></svg>
+											<span class="card__counter card__counter_popular-1150px card__counter_992px">499 likes</span>
+										</div>
+										<div class="card__comments row row_align-center">
+											<svg class="icon__comment icon__comment_popular-1150px icon__comment_992px"></svg>
+											<span class="card__counter card__counter_popular-1150px card__counter_992px">12 comments</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns-2-1150px columns-1-772px">
+								<div class="card card_shadow card_left">
+									<div class="card__view-block">
+										<svg class="icon__show icon__show_popular-1150px icon__show_992px"></svg>
+										<span class="card__counter card__counter_popular-1150px card__counter_992px">12000 views</span>
+									</div>
+									<div class="card__image-block ">
+										<img src="./images/card3.png" alt="" class="card__image image_res-215x215">
+									</div>
+									<div class="card__title card__title_popular-1150px card__title_992px">Fresh meat</div>
+									<div class="card__creator card__creator_popular-1150px card__creator_992px">John Doe</div>
+									<div class="card__rating-block row">
+										<div class="card__likes row row_align-center">
+											<svg class="icon__heart icon__heart_popular-1150px icon__heart_992px"></svg>
+											<span class="card__counter card__counter_popular-1150px card__counter_992px">499 likes</span>
+										</div>
+										<div class="card__comments row row_align-center">
+											<svg class="icon__comment icon__comment_popular-1150px icon__comment_992px"></svg>
+											<span class="card__counter card__counter_popular-1150px card__counter_992px">12 comments</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="columns-2-1150px columns-1-772px">
+								<div class="card card_shadow card_left">
+									<div class="card__view-block">
+										<svg class="icon__show icon__show_popular-1150px icon__show_992px"></svg>
+										<span class="card__counter card__counter_popular-1150px card__counter_992px">12000 views</span>
+									</div>
+									<div class="card__image-block ">
+										<img src="./images/card4.png" alt="" class="card__image image_res-215x215">
+									</div>
+									<div class="card__title card__title_popular-1150px card__title_992px">Fresh meat</div>
+									<div class="card__creator card__creator_popular-1150px card__creator_992px">John Doe</div>
+									<div class="card__rating-block row">
+										<div class="card__likes row row_align-center">
+											<svg class="icon__heart icon__heart_popular-1150px icon__heart_992px"></svg>
+											<span class="card__counter card__counter_popular-1150px card__counter_992px">499 likes</span>
+										</div>
+										<div class="card__comments row row_align-center">
+											<svg class="icon__comment icon__comment_popular-1150px icon__comment_992px"></svg>
+											<span class="card__counter card__counter_popular-1150px card__counter_992px">12 comments</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page">
+			<div class="container">
+				<div class="section section_big-top-padding section_big-bottom-padding">
+					<div class="picked-by-us">
+						<div class="title-block">
+							<div class="title">Picked By Us</div>
+						</div>
+						<div class="row row_wrap-1150px">
+							<div class="columns-2 columns-1-1150px ">
+								<div class="image-card  image-card_right-margin image-card_bottom-margin-1150px">
+									<img src="./images/pickedByUsItsAllAboutPancakes.png" alt="" class="image-card__image image_res-540x540">
+									<button class="btn image-card__btn btn_text-26 image-card__btn_big">its all about pancakes</button>
+								</div>
+							</div>
+							<div class="columns-2 columns-1-1150px">
+								<div class="columns-1 ">
+									<div class="row ">
+										<div class="image-card image-card_bottom-margin ">
+											<img src="./images/pickedByUsIceCreamDream.png" alt="" class="image-card__image image_res-540x255">
+											<button class="btn image-card__btn btn_text-20 image-card__btn_small">Ice cream dream</button>
+										</div>
+									</div>
+									<div class="row colums-2">
+										<div class="image-card image-card_right-margin">
+											<img src="./images/pickedByUsFastBreakfast.png" alt="" class="image-card__image image_res-255x255">
+											<button class="btn image-card__btn btn_text-20 image-card__btn_small">Fast breakfast</button>
+										</div>
+										<div class="image-card ">
+											<img src="./images/pickedByUsFruitsAndVegetables.png" alt="" class="image-card__image image_res-255x255">
+											<button class="btn image-card__btn btn_text-20 image-card__btn_small image-card__btn_many-text">Fruits and
+												vegatables</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page page_primary">
+			<div class="container">
+				<div class="section section_small-top-padding section_small-bottom-padding">
+					<div class="title-block">
+						<div class="title">Trending Recepies</div>
+					</div>
+					<div class="row row_wrap-992px">
+						<div class="columns-3 columns-1-992px">
+							<div class="card card_trending-margin">
+								<div class="card__view-block">
+									<svg class="icon__show icon__show_992px"></svg>
+									<span class="card__counter card__counter_992px">12000 views</span>
+								</div>
+								<div class="card__image-block">
+									<img src="./images/trendingRecepies1.png" alt="" class="card__image image_res-310x236">
+								</div>
+								<div class="card__title card__title_992px">Fresh meat with potato</div>
+								<div class="card__creator card__counter_992px">John Doe</div>
+							</div>
+						</div>
+						<div class="columns-3 columns-1-992px">
+							<div class="card card_trending-margin">
+								<div class="card__view-block">
+									<svg class="icon__show icon__show_992px"></svg>
+									<span class="card__counter card__counter_992px">12000 views</span>
+								</div>
+								<div class="card__image-block">
+									<img src="./images/trendingRecepies2.png" alt="" class="card__image image_res-310x236">
+								</div>
+								<div class="card__title card__title_992px">Fresh meat with potato</div>
+								<div class="card__creator card__creator_992px">John Doe</div>
+							</div>
+						</div>
+						<div class="columns-3 columns-1-992px">
+							<div class="card ">
+								<div class="card__view-block">
+									<svg class="icon__show icon__show_992px"></svg>
+									<span class="card__counter card__counter_992px">12000 views</span>
+								</div>
+								<div class="card__image-block">
+									<img src="./images/trendingRecepies3.png" alt="" class="card__image image_res-310x236">
+								</div>
+								<div class="card__title card__title_992px">Fresh meat with potato</div>
+								<div class="card__creator card__creator_992px">John Doe</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer >
+		<div class="page page_black">
+			<div class="footer container row row_align-center row_parent-height column-992px">
 					<div class="logo ">
-						<span class="logo__text logo__text--white">Feed<span class="logo__text--primary">me</span></span>
+						<span class="logo__text text_white">Feed<span class="logo__text logo__text_primary">me</span>
+						</span>
 					</div>
-					<div class="footer__links">
-						<a href="#" class="footer__link">Cookbooks</a>
-						<a href="#" class="footer__link">Recepies</a>
-						<a href="#" class="footer__link">About Us</a>
+					<div class="footer__links-block ">
+						<a href="" class="footer__link footer__link_link-margin text_white link">Cookbooks</a>
+						<a href="" class="footer__link footer__link_link-margin text_white link">Recepies</a>
+						<a href="" class="footer__link footer__link_link-margin text_white link">About Us</a>
 					</div>
-					<div class="nav__links">
-						<a class="footer__email" href="mailto:plzfeedme@itechart.com">plzfeedme@itechart.com</a>
+					<div class="footer__email-block ">
+						<a href="" class="footer__link link text_white">plzfeedme@itechart.com</a>
 					</div>
-					<div class="footer__project">
-						<span class="footer__project-name">Study Project</span>
-						<span class="footer__project-company">iTechArt, 2020</span>
+					<div class="footer__company-block ">
+						<div class="footer__project-name text_white">Study Project</div>
+						<div class="footer__company-name text_white">iTechArt, 2020</div>
 					</div>
-				</nav>
-			</div>
-		</footer>
-	</div>
+				</div>
+		</div>
+	</footer>
 </body>
 </html>
